@@ -18,6 +18,8 @@
         "react"
     ],
     "rules": {
-        "linebreak-style": 0
+        // TODO: Ensure this list is empty and everything compiles correctly.
+        "linebreak-style": 0,
+        "react/prop-types": 0
     }
 }
