@@ -9,9 +9,9 @@ function Footer() {
         <span>hanks.</span>
       </h6>
       <div className="pt-16">
-        <FooterLink url="/" name="Linkedin" />
-        <FooterLink url="/" name="Github" />
-        <FooterLink url="/" name="Twitter" />
+        <FooterLink url="https://www.linkedin.com/in/patrick-roelofs/" name="Linkedin" />
+        <FooterLink url="https://github.com/Patrickroelofs" name="Github" />
+        <FooterLink url="https://twitter.com/Downmetpatrick" name="Twitter" />
       </div>
     </footer>
   );

@@ -1,45 +1,23 @@
 {
   "name": "patrickroelofs.com",
-  "version": "0.0.1",
-  "private": true,
+  "version": "1.0.0",
+  "description": "A personal website for me, Patrick :)",
+  "main": "app.js",
   "dependencies": {
-    "@craco/craco": "^6.0.0",
-    "@tailwindcss/postcss7-compat": "^2.0.2",
-    "autoprefixer": "^9.8.6",
-    "postcss": "^7.0.35",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
+    "express": "^4.17.1"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "craco start",
-    "build": "craco build"
+    "start": "node ./app.js"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Patrickroelofs/patrickroelofs.com.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Patrickroelofs/patrickroelofs.com/issues"
   },
-  "devDependencies": {
-    "eslint": "^7.17.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0"
-  }
+  "homepage": "https://github.com/Patrickroelofs/patrickroelofs.com#readme"
 }
