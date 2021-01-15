@@ -1,15 +1,23 @@
 import React from 'react';
 import Footer from './footer/Footer';
 import Header from './header/Header';
+import Contact from './homepage/contact/Contact';
 
 function App() {
   return (
     <>
-      <main className="bg-themeWhite 100vw min-h-screen overflow-hidden">
-        <Header />
-      </main>
+      <div className="bg-themeWhite 100vw min-h-screen">
+        <main className="overflow-hidden min-h-screen 100vw">
+          <Header />
+        </main>
 
-      <Footer />
+        <section>
+          <Contact />
+        </section>
+
+        <Footer />
+      </div>
+
     </>
   );
 }
