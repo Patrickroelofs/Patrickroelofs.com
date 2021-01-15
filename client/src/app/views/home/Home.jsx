@@ -3,6 +3,7 @@ import Footer from '../../sharedcomponents/footer/Footer';
 import Header from './header/Header';
 import Contact from './contact/Contact';
 import Description from './description/Description';
+import Mywork from './mywork/Mywork';
 
 function Home() {
   return (
@@ -14,6 +15,10 @@ function Home() {
 
         <section className="min-h-screen">
           <Description />
+        </section>
+
+        <section>
+          <Mywork />
         </section>
 
         <section>
