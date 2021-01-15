@@ -1,10 +1,10 @@
 import React from 'react';
-import Footer from './footer/Footer';
+import Footer from '../../sharedcomponents/footer/Footer';
 import Header from './header/Header';
-import Contact from './homepage/contact/Contact';
-import Description from './homepage/description/Description';
+import Contact from './contact/Contact';
+import Description from './description/Description';
 
-function App() {
+function Home() {
   return (
     <>
       <div className="bg-themeWhite 100vw min-h-screen">
@@ -27,4 +27,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
