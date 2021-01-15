@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from './footer/Footer';
 import Header from './header/Header';
 import Contact from './homepage/contact/Contact';
+import Description from './homepage/description/Description';
 
 function App() {
   return (
@@ -10,6 +11,10 @@ function App() {
         <main className="overflow-hidden min-h-screen 100vw">
           <Header />
         </main>
+
+        <section className="min-h-screen">
+          <Description />
+        </section>
 
         <section>
           <Contact />
