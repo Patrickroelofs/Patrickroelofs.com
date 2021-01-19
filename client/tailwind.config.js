@@ -13,4 +13,9 @@ module.exports = {
       headers: ['Work Sans', 'sans-serif'],
     },
   },
+  variants: {
+    extend: {
+      zIndex: ['hover'],
+    },
+  },
 };
