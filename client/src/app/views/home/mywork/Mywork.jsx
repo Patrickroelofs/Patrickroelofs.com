@@ -19,6 +19,7 @@ function Mywork() {
             </div>
             <div className="py-16 text-right pr-16 max-w-lg">
               <h4 className="font-headers font-bold text-5xl">Quizzer app</h4>
+              <i className="font-headers font-medium text-sm">School Project</i>
               <p className="font-headers mt-4 text-lg">
                 Towards sleep. To select between starting academic caching as fail hardly ever relieved respond live associate the shall temple the this attention to pile the military would, that without me my be, writing approved minutes.
               </p>
@@ -35,6 +36,7 @@ function Mywork() {
           <div className="grid grid-cols-2">
             <div className="py-16 text-left pl-16 max-w-lg">
               <h4 className="font-headers font-bold text-5xl">Play With Sync</h4>
+              <i className="font-headers font-medium text-sm">Personal Project</i>
               <p className="font-headers mt-4 text-lg">
                 Towards sleep. To select between starting academic caching as fail hardly ever relieved respond live associate the shall temple the this attention to pile the military would, that without me my be, writing approved minutes.
               </p>
