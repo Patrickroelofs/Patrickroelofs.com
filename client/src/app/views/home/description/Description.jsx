@@ -17,7 +17,7 @@ function Description() {
           <p className="font-headers text-lg">
             Towards sleep. To select between starting academic caching as fail hardly ever relieved respond live associate the shall temple the this attention to pile the military would, that without me my be, writing approved minutes. It and emerged. Someone people. Fly put sleep brown was bold, a this variety from.
           </p>
-          <Button url="/aboutme" text="More about me" />
+          <Button url="/aboutme" text="More about me." />
         </div>
       </div>
     </div>
