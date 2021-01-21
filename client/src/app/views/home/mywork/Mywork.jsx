@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Button from '../../../sharedcomponents/button/Button';
 
 function Mywork() {
   return (
@@ -24,10 +24,7 @@ function Mywork() {
               <p className="font-headers mt-4 text-lg">
                 Towards sleep. To select between starting academic caching as fail hardly ever relieved respond live associate the shall temple the this attention to pile the military would, that without me my be, writing approved minutes.
               </p>
-              <Link className="inline-block mt-6 align-middle font-medium hover:bg-themeWhite transform hover:scale-150 hover:shadow-2xl pt-0 pb-2 px-4 z-40 hover:z-50 rounded-md ease-in-out transition-all duration-500" to="/">
-                View Project
-                <span className="ml-2 text-2xl">👉</span>
-              </Link>
+              <Button text="View Project" />
               <div className="grid grid-cols-3 gap-4 mt-8">
                 <img className="w-full transform duration-500 hover:scale-150 hover:shadow-2xl ease-in-out transition-all hover:z-50 z-40 relative rounded-md" src="https://picsum.photos/250" alt="image1" />
                 <img className="w-full transform duration-500 hover:scale-150 hover:shadow-2xl ease-in-out transition-all hover:z-50 z-40 relative rounded-md" src="https://picsum.photos/251" alt="image1" />
@@ -46,10 +43,7 @@ function Mywork() {
                 Towards sleep. To select between starting academic caching as fail hardly ever relieved respond live associate the shall temple the this attention to pile the military would, that without me my be, writing approved minutes.
 
               </p>
-              <Link className="inline-block mt-6 align-middle font-medium hover:bg-themeWhite transform hover:scale-150 hover:shadow-2xl pt-0 pb-2 px-4 z-40 hover:z-50 rounded-md ease-in-out transition-all duration-500" to="/">
-                View Project
-                <span className="ml-2 text-2xl">👉</span>
-              </Link>
+              <Button text="View Project" />
               <div className="grid grid-cols-3 gap-4 mt-8">
                 <img className="w-full transform duration-500 hover:scale-150 hover:shadow-2xl ease-in-out transition-all hover:z-50 z-40 relative rounded-md" src="https://picsum.photos/250" alt="image1" />
                 <img className="w-full transform duration-500 hover:scale-150 hover:shadow-2xl ease-in-out transition-all hover:z-50 z-40 relative rounded-md" src="https://picsum.photos/251" alt="image1" />
