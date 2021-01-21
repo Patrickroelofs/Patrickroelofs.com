@@ -7,9 +7,11 @@ function Header() {
       <div className="absolute top-1/2 w-screen" style={{ transform: 'translateY(-50%)' }}>
         <motion.button
           drag
-          dragMomentum={false}
+          dragConstraints={{
+            top: 25, right: 25, bottom: 25, left: 25,
+          }}
           style={{
-            fontSize: '23vw', left: '51vw', top: '-42%', transform: 'matrix(0.92, -0.14, 0.46, 0.99, 0, 0)',
+            fontSize: '23vw', left: '54vw', top: '-42%',
           }}
           className="text-themeRed font-black font-headers absolute z-50 leading-none"
         >
