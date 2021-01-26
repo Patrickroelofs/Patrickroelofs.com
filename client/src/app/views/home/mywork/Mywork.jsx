@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 import Button from '../../../sharedcomponents/button/Button';
+import ProjectPreviewImage from '../../../sharedcomponents/projectpreview/ProjectPreviewImage';
 
 function Mywork() {
   return (
@@ -26,9 +27,9 @@ function Mywork() {
               </p>
               <Button text="View Project" />
               <div className="grid grid-cols-3 gap-4 mt-8">
-                <img className="w-full transform duration-500 hover:scale-150 hover:shadow-2xl ease-in-out transition-all hover:z-50 z-40 relative rounded-md" src="https://picsum.photos/250" alt="image1" />
-                <img className="w-full transform duration-500 hover:scale-150 hover:shadow-2xl ease-in-out transition-all hover:z-50 z-40 relative rounded-md" src="https://picsum.photos/251" alt="image1" />
-                <img className="w-full transform duration-500 hover:scale-150 hover:shadow-2xl ease-in-out transition-all hover:z-50 z-40 relative rounded-md" src="https://picsum.photos/252" alt="image1" />
+                <ProjectPreviewImage url="https://picsum.photos/250" />
+                <ProjectPreviewImage url="https://picsum.photos/250" />
+                <ProjectPreviewImage url="https://picsum.photos/250" />
               </div>
             </div>
           </div>
@@ -45,9 +46,9 @@ function Mywork() {
               </p>
               <Button text="View Project" />
               <div className="grid grid-cols-3 gap-4 mt-8">
-                <img className="w-full transform duration-500 hover:scale-150 hover:shadow-2xl ease-in-out transition-all hover:z-50 z-40 relative rounded-md" src="https://picsum.photos/250" alt="image1" />
-                <img className="w-full transform duration-500 hover:scale-150 hover:shadow-2xl ease-in-out transition-all hover:z-50 z-40 relative rounded-md" src="https://picsum.photos/251" alt="image1" />
-                <img className="w-full transform duration-500 hover:scale-150 hover:shadow-2xl ease-in-out transition-all hover:z-50 z-40 relative rounded-md" src="https://picsum.photos/252" alt="image1" />
+                <ProjectPreviewImage url="https://picsum.photos/250" />
+                <ProjectPreviewImage url="https://picsum.photos/250" />
+                <ProjectPreviewImage url="https://picsum.photos/250" />
               </div>
             </div>
             <div className="relative -top-12 hidden md:block">
