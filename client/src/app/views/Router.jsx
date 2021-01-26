@@ -5,11 +5,7 @@ import Home from './home/Home';
 function Router() {
   return (
     <Switch>
-
-      <Route path="/">
-        <Home />
-      </Route>
-
+      <Route path="/" component={Home} exact />
     </Switch>
   );
 }
