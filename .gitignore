@@ -105,3 +105,6 @@ dist
 
 # Ignore build
 build
+
+# Ignore MacOS .DS_Store
+.DS_Store
