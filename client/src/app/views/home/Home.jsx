@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../../sharedcomponents/footer/Footer';
+import Footer from '../../footer/Footer';
 import Header from './header/Header';
 
 function Home() {
