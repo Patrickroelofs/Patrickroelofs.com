@@ -19,4 +19,7 @@ module.exports = {
       zIndex: ['hover'],
     },
   },
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
