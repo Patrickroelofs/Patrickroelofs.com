@@ -3,11 +3,16 @@ import React from 'react';
 import Button from '../../../components/button/Button';
 import Footer from '../../../components/footer/Footer';
 import Header from '../../../components/home/header/Header';
+import InProgress from '../../../components/inProgress/InProgress';
 import emoji from '../../../helpers/emojiHelper';
 
 function Home() {
   return (
     <>
+      { process.env.NODE_ENV === 'development'
+        ? null
+        : <InProgress /> }
+
       <div className="bg-themeWhite 100vw min-h-screen">
         <main className="overflow-hidden min-h-screen 100vw">
           <Header />
