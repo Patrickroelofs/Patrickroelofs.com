@@ -32,7 +32,7 @@ function Home() {
           </p>
           <p className="block text-xl font-headers pt-8 leading-normal relative z-10 px-2">
             Previously I studied Interaction Design, which means I now have the know-how and creative 👨🏼‍🎨 skills to design and develop websites, like this one!
-            <Button text="More about me." />
+            <Button text="More about me." goto="/" />
           </p>
         </section>
 
