@@ -29,7 +29,7 @@ function Home() {
           <p className="block text-xl font-headers pt-8 leading-normal">
           Previously I studied Interaction Design, which means I now have the know-how and creative
           {emoji.checkPlatform('👨🏼‍🎨')}
-          skills to design and develop websites, like this one!</p>
+          &nbsp;skills to design and develop websites, like this one!</p>
         </section>
 
         <Footer />
