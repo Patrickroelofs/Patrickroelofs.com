@@ -1,6 +1,7 @@
+/* eslint-disable max-len */
 import React from 'react';
-import Footer from '../../footer/Footer';
-import Header from './header/Header';
+import Footer from '../../../components/footer/Footer';
+import Header from '../../../components/home/header/Header';
 
 function Home() {
   return (
@@ -9,6 +10,20 @@ function Home() {
         <main className="overflow-hidden min-h-screen 100vw">
           <Header />
         </main>
+
+        <section className="w-screen h-screen max-w-xl m-auto py-32">
+          <p className="block text-2xl font-headers leading-normal">
+            Hi, I’m&nbsp;
+            <span className="hover:underline cursor-pointer font-medium">Patrick</span>
+            &nbsp;a student web developer in
+            <br />
+            <span className="hover:underline cursor-pointer">The Netherlands</span>
+            🇳🇱. I am currently spending my time studying&nbsp;
+            <span className="hover:underline cursor-pointer">webdevelopment</span>
+            👨🏼‍💻.
+          </p>
+          <p className="block text-xl font-headers pt-8 leading-normal">Previously I studied Interaction Design, which means I now have the know-how and creative👨🏼‍🎨 skills to design and develop websites, like this one!</p>
+        </section>
 
         <Footer />
       </div>
