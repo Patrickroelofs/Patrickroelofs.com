@@ -1,7 +1,9 @@
-/* eslint-disable max-len */
+/* eslint-disable */
 import React from 'react';
 import Footer from '../../../components/footer/Footer';
 import Header from '../../../components/home/header/Header';
+import emoji from '../../../helpers/emojiHelper';
+
 
 function Home() {
   return (
@@ -18,11 +20,16 @@ function Home() {
             &nbsp;a student web developer in
             <br />
             <span className="hover:underline cursor-pointer">The Netherlands</span>
-            🇳🇱. I am currently spending my time studying&nbsp;
+            {emoji.checkPlatform('🇳🇱')}
+            . I am currently spending my time studying&nbsp;
             <span className="hover:underline cursor-pointer">webdevelopment</span>
-            👨🏼‍💻.
+            {emoji.checkPlatform('👨🏼‍💻')}
+            .
           </p>
-          <p className="block text-xl font-headers pt-8 leading-normal">Previously I studied Interaction Design, which means I now have the know-how and creative👨🏼‍🎨 skills to design and develop websites, like this one!</p>
+          <p className="block text-xl font-headers pt-8 leading-normal">
+          Previously I studied Interaction Design, which means I now have the know-how and creative
+          {emoji.checkPlatform('👨🏼‍🎨')}
+          skills to design and develop websites, like this one!</p>
         </section>
 
         <Footer />
