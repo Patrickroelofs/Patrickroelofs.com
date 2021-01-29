@@ -1,9 +1,8 @@
-/* eslint-disable */
+/* eslint-disable max-len */
 import React from 'react';
 import Footer from '../../../components/footer/Footer';
 import Header from '../../../components/home/header/Header';
 import emoji from '../../../helpers/emojiHelper';
-
 
 function Home() {
   return (
@@ -13,8 +12,14 @@ function Home() {
           <Header />
         </main>
 
-        <section className="w-screen h-screen max-w-xl m-auto py-32">
-          <p className="block text-2xl font-headers leading-normal">
+        <section className="w-screen min-h-screen max-w-xl m-auto py-16 relative">
+          <img
+            className="rounded-full mb-8 shadow-xl"
+            width="200"
+            src="https://picsum.photos/500"
+            alt="profile"
+          />
+          <p className="block text-2xl font-headers leading-normal relative z-10">
             Hi, I’m&nbsp;
             <span className="hover:underline cursor-pointer font-medium">Patrick</span>
             &nbsp;a student web developer in
@@ -26,10 +31,11 @@ function Home() {
             {emoji.checkPlatform('👨🏼‍💻')}
             .
           </p>
-          <p className="block text-xl font-headers pt-8 leading-normal">
-          Previously I studied Interaction Design, which means I now have the know-how and creative
-          {emoji.checkPlatform('👨🏼‍🎨')}
-          &nbsp;skills to design and develop websites, like this one!</p>
+          <p className="block text-xl font-headers pt-8 leading-normal relative z-10">
+            Previously I studied Interaction Design, which means I now have the know-how and creative
+            {emoji.checkPlatform('👨🏼‍🎨')}
+          &nbsp;skills to design and develop websites, like this one!
+          </p>
         </section>
 
         <Footer />
