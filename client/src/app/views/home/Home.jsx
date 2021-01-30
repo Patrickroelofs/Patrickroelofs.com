@@ -31,12 +31,10 @@ function Home() {
           />
           <p className="block text-xl md:text-2xl font-headers leading-normal relative z-10 px-2">
             Hi, I’m&nbsp;
-            <span className="hover:underline cursor-pointer font-medium">Patrick</span>
-            &nbsp;a student web developer in&nbsp;
-            <span className="hover:underline cursor-pointer">The Netherlands</span>
+            <span className="font-medium">Patrick</span>
+            &nbsp;a student web developer in The Netherlands
             {emoji.checkPlatform('🇳🇱')}
-            . I am currently spending my time studying&nbsp;
-            <span className="hover:underline cursor-pointer">webdevelopment</span>
+            . I am currently spending my time studying webdevelopment
             👨🏼‍💻.
           </p>
           <p className="block text-xl font-headers pt-8 leading-normal relative z-10 px-2">
