@@ -1,4 +1,5 @@
 /* eslint-disable max-len */
+import { motion, useTransform, useViewportScroll } from 'framer-motion';
 import React from 'react';
 import Button from '../../../components/button/Button';
 import Footer from '../../../components/footer/Footer';
@@ -7,6 +8,9 @@ import InProgress from '../../../components/inProgress/InProgress';
 import emoji from '../../../helpers/emojiHelper';
 
 function Home() {
+  const { scrollYProgress } = useViewportScroll();
+  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1.90]);
+
   return (
     <>
       { process.env.NODE_ENV === 'development'
@@ -19,9 +23,9 @@ function Home() {
         </main>
 
         <section className="w-screen min-h-screen max-w-xl m-auto py-16 relative">
-          <img
+          <motion.img
             className="rounded-full mb-8 shadow-xl text-center m-auto md:ml-0"
-            style={{ maxWidth: '200px' }}
+            style={{ maxWidth: '200px', opacity }}
             src="https://picsum.photos/500"
             alt="profile"
           />
