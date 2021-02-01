@@ -3,7 +3,7 @@ import { motion, useTransform, useViewportScroll } from 'framer-motion';
 import React from 'react';
 import Button from '../../../components/button/Button';
 import Footer from '../../../components/footer/Footer';
-import Header from '../../../components/home/header/Header';
+import Header from '../../../components/header/Header';
 import InProgress from '../../../components/inProgress/InProgress';
 import emoji from '../../../helpers/emojiHelper';
 
