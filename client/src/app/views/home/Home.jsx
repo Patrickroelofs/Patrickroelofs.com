@@ -25,7 +25,7 @@ function Home() {
         <motion.img
           className="rounded-full mb-8 shadow-xl text-center m-auto md:ml-0"
           style={{ maxWidth: '200px', opacity }}
-          src="https://picsum.photos/500"
+          src="/profile_temp.png"
           alt="profile"
         />
         <p className="block text-xl md:text-2xl font-headers leading-normal relative z-10 px-2">
