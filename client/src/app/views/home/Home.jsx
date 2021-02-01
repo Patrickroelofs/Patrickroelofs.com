@@ -1,6 +1,5 @@
 /* eslint-disable max-len */
-import { motion, useTransform, useViewportScroll } from 'framer-motion';
-import React from 'react';
+import React, { useState } from 'react';
 import Footer from '../../../components/footer/Footer';
 import Header from '../../../components/header/Header';
 import InProgress from '../../../components/inProgress/InProgress';
@@ -8,8 +7,11 @@ import SkillsAndTools from '../../../components/skillsAndTools/SkillsAndTools';
 import emoji from '../../../helpers/emojiHelper';
 
 function Home() {
-  const { scrollYProgress } = useViewportScroll();
-  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1.90]);
+  const [mask, setMask] = useState(false);
+  const wearMask = () => {
+    if (mask) { return '/profile_tempMaskOn.png'; }
+    return '/profile_temp.png';
+  };
 
   return (
     <>
@@ -22,11 +24,13 @@ function Home() {
       </main>
 
       <section className="w-screen min-h-screen max-w-xl m-auto py-16 relative">
-        <motion.img
-          className="rounded-full mb-8 shadow-xl text-center m-auto md:ml-0"
-          style={{ maxWidth: '200px', opacity }}
-          src="/profile_temp.png"
+        <img
+          className="mb-8 text-center m-auto md:ml-0 cursor-pointer transform hover:scale-125 ease-in-out transition-all"
+          style={{ maxWidth: '200px' }}
+          src={wearMask()}
           alt="profile"
+          onClick={() => { setMask(!mask); }}
+          aria-hidden="true"
         />
         <p className="block text-xl md:text-2xl font-headers leading-normal relative z-10 px-2">
           Hi, I’m&nbsp;
