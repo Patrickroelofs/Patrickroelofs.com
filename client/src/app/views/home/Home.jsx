@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import Footer from '../../../components/footer/Footer';
 import Header from '../../../components/header/Header';
-import InProgress from '../../../components/inProgress/InProgress';
 import SkillsAndTools from '../../../components/skillsAndTools/SkillsAndTools';
 import emoji from '../../../helpers/emojiHelper';
 
@@ -15,10 +14,6 @@ function Home() {
 
   return (
     <>
-      { process.env.NODE_ENV === 'development'
-        ? null
-        : <InProgress /> }
-
       <main className="overflow-hidden min-h-screen 100vw">
         <Header />
       </main>
