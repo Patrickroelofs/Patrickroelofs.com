@@ -8,7 +8,9 @@ import './stylesheet.css';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Router />
+      <div className="bg-themeWhite 100vw min-h-screen">
+        <Router />
+      </div>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root'),
