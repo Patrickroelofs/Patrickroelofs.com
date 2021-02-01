@@ -1,10 +1,10 @@
 /* eslint-disable max-len */
 import { motion, useTransform, useViewportScroll } from 'framer-motion';
 import React from 'react';
-import Button from '../../../components/button/Button';
 import Footer from '../../../components/footer/Footer';
 import Header from '../../../components/header/Header';
 import InProgress from '../../../components/inProgress/InProgress';
+import SkillsAndTools from '../../../components/skillsAndTools/SkillsAndTools';
 import emoji from '../../../helpers/emojiHelper';
 
 function Home() {
@@ -38,10 +38,10 @@ function Home() {
         </p>
         <p className="block text-xl font-headers pt-8 leading-normal relative z-10 px-2">
           Previously I studied Interaction Design, which means I now have the know-how and creative 👨🏼‍🎨 skills to design and develop websites, like this one!
-          <Button text="More about me." goto="/about" />
         </p>
-      </section>
 
+        <SkillsAndTools />
+      </section>
       <Footer />
 
     </>
