@@ -1,11 +1,12 @@
 /* eslint-disable max-len */
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import Footer from '../../../components/footer/Footer';
 import Header from '../../../components/header/Header';
 import SkillsAndTools from '../../../components/skillsAndTools/SkillsAndTools';
 import emoji from '../../../helpers/emojiHelper';
 
 function Home() {
+  const constraintsRef = useRef(null);
   const [mask, setMask] = useState(false);
   const wearMask = () => {
     if (mask) { return '/profile_tempMaskOn.png'; }
@@ -14,8 +15,8 @@ function Home() {
 
   return (
     <>
-      <main className="overflow-hidden min-h-screen 100vw">
-        <Header />
+      <main ref={constraintsRef} className="overflow-hidden min-h-screen 100vw">
+        <Header constraint={constraintsRef} />
       </main>
 
       <section className="w-screen min-h-screen max-w-xl m-auto py-16 relative">
