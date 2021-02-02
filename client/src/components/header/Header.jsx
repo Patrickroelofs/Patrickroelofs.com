@@ -10,10 +10,13 @@ function Header({ constraint }) {
           drag
           dragConstraints={constraint}
           dragElastic={1}
-          style={{
-            fontSize: '23vw', left: '54vw', top: '-42%',
+          dragTransition={{
+            bounceStiffness: 100, bounceDamping: 6, min: 0, max: 500,
           }}
-          className="text-themeRed font-black font-headers absolute z-50 leading-none"
+          style={{
+            fontSize: '23vw', left: '54vw', top: '-42%', zIndex: 999,
+          }}
+          className="text-themeRed font-black font-headers absolute leading-none"
         >
           .
         </motion.button>
