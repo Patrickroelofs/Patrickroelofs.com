@@ -46,14 +46,6 @@ function Home() {
 
       <SkillsAndTools />
 
-      <section className="w-screen min-h-screen m-auto py-16 relative">
-        <h1 className="relative font-headers text-black font-black text-center" style={{ fontSize: '12vw' }}>
-          My work
-          <span className="text-themeRed font-headers font-black">.</span>
-        </h1>
-        <p className="text-center">It&apos;s being worked on :)</p>
-      </section>
-
       <Footer />
 
     </>
