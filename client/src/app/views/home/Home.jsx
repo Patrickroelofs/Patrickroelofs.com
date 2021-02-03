@@ -34,10 +34,13 @@ function Home() {
             &nbsp;a student web developer in The Netherlands
           {emoji.checkPlatform('🇳🇱')}
           . I am currently spending my time studying webdevelopment
-          👨🏼‍💻.
+          {emoji.checkPlatform('👨🏼‍💻')}
+          .
         </p>
         <p className="block text-xl font-headers pt-8 leading-normal relative z-10 px-2">
-          Previously I studied Interaction Design, which means I now have the know-how and creative 👨🏼‍🎨 skills to design and develop websites, like this one!
+          Previously I studied Interaction Design, which means I now have the know-how and creative
+          {emoji.checkPlatform('👨🏼‍🎨')}
+          &nbsp;skills to design and develop websites, like this one!
         </p>
       </section>
 
