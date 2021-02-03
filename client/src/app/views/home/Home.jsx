@@ -51,7 +51,9 @@ function Home() {
           My work
           <span className="text-themeRed font-headers font-black">.</span>
         </h1>
+        <p className="text-center">It&apos;s being worked on :)</p>
       </section>
+
       <Footer />
 
     </>
