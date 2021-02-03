@@ -11,8 +11,8 @@ function Footer() {
   );
 
   return (
-    <footer className="w-full h-96 bg-black text-center">
-      <h6 style={{ fontSize: '18vw', top: '-120px', lineHeight: '0.6' }} className="text-themeWhite font-black font-headers">
+    <footer className="w-full bg-black text-center pb-6" style={{ minHeight: '24rem' }}>
+      <h6 style={{ fontSize: '18vw', top: '-5%', lineHeight: '0.6' }} className="relative text-themeWhite font-black font-headers">
         <span style={{ fontSize: '19vw' }}>T</span>
         <span>hanks.</span>
       </h6>
