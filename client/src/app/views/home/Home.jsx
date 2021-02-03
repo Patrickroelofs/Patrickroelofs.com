@@ -19,7 +19,7 @@ function Home() {
         <Header constraint={constraintsRef} />
       </main>
 
-      <section className="w-screen min-h-screen max-w-xl m-auto py-16 relative">
+      <section className="w-screen max-w-xl m-auto pt-16 relative">
         <img
           className="mb-8 text-center m-auto md:ml-0 cursor-pointer transform hover:scale-125 ease-in-out transition-all"
           style={{ maxWidth: '200px' }}
@@ -39,8 +39,15 @@ function Home() {
         <p className="block text-xl font-headers pt-8 leading-normal relative z-10 px-2">
           Previously I studied Interaction Design, which means I now have the know-how and creative 👨🏼‍🎨 skills to design and develop websites, like this one!
         </p>
+      </section>
 
-        <SkillsAndTools />
+      <SkillsAndTools />
+
+      <section className="w-screen min-h-screen m-auto py-16 relative">
+        <h1 className="relative font-headers text-black font-black text-center" style={{ fontSize: '12vw' }}>
+          My work
+          <span className="text-themeRed font-headers font-black">.</span>
+        </h1>
       </section>
       <Footer />
 
