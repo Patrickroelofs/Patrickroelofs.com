@@ -16,3 +16,7 @@
     -webkit-text-fill-color: transparent;
   }
 }
+
+body, html {
+  background: #fefdf8;
+}
