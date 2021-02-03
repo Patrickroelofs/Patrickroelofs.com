@@ -14,9 +14,9 @@ function SkillsAndTools() {
         { Skill({ text: 'React', icon: icons.react() }) }
         { Skill({ text: 'NodeJS', icon: icons.nodejs() }) }
         { Skill({ text: 'Sass', icon: icons.sass() }) }
+        { Skill({ text: 'Java', icon: icons.java() })}
         { Skill({ text: 'Figma', icon: icons.figma() })}
         { Skill({ text: 'Sketch', icon: icons.sketch() }) }
-        { Skill({ text: 'Java', icon: icons.java() })}
       </div>
     </div>
   );
