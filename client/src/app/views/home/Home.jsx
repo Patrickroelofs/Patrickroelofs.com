@@ -3,6 +3,7 @@ import React, { useRef, useState } from 'react';
 import Footer from '../../../components/footer/Footer';
 import Header from '../../../components/header/Header';
 import SkillsAndTools from '../../../components/skillsAndTools/SkillsAndTools';
+import Contact from '../../../components/contact/Contact';
 import emoji from '../../../helpers/emojiHelper';
 
 function Home() {
@@ -47,7 +48,7 @@ function Home() {
       <SkillsAndTools />
 
       <section className="w-screen min-h-screen m-auto pt-16 relative">
-        <h1 className="relative font-headers text-black font-black text-center top-20 uppercase" style={{ fontSize: '12vw' }}>
+        <h1 className="relative font-headers text-black font-black text-center top-0 lg:top-20 uppercase" style={{ fontSize: '12vw' }}>
           My work
           <span className="text-themeRed font-headers font-black">.</span>
         </h1>
@@ -56,9 +57,9 @@ function Home() {
           className="relative z-10 w-screen"
           style={{ background: 'linear-gradient(90deg, #84FAB0 0%, #8FD3F4 100%)', minHeight: '12vh' }}
         >
-          <div className="max-w-6xl m-auto py-16 grid grid-cols-2">
+          <div className="max-w-6xl m-auto py-16 grid grid-cols-1 md:grid-cols-2">
 
-            <div>
+            <div className="px-6">
               <div className="pb-6">
                 <h3 className="font-headers text-black font-bold text-5xl">Laterlezer</h3>
                 <sub className="font-headers font-medium text-sm text-gray-800">School Project</sub>
@@ -66,8 +67,8 @@ function Home() {
               <p className="font-headers">Laterlezer is an article reader app written it allows users to parse articles and read them at a later point. The parser clean articles by removing unnecessary content like advertising and sometimes circumventing pay/cookie walls.</p>
             </div>
 
-            <div className="text-right font-headers">
-              <img className="inline-block w-full shadow-2xl mx-8 rounded-sm" src="/projects/laterlezer_laptop.png" alt="hello" />
+            <div className="text-right font-headers mx-8 mt-6 md:mt-0">
+              <img className="inline-block w-full shadow-2xl rounded-sm" src="/projects/laterlezer_laptop.png" alt="hello" />
             </div>
 
           </div>
@@ -77,9 +78,9 @@ function Home() {
           className="relative z-10 w-screen"
           style={{ background: 'linear-gradient(90deg, #FFBCBB 0%, #9DA5FF 100%)', minHeight: '12vh' }}
         >
-          <div className="max-w-6xl m-auto py-16 grid grid-cols-2">
+          <div className="max-w-6xl m-auto py-16 grid grid-cols-1 md:grid-cols-2">
 
-            <div>
+            <div className="px-6">
               <div className="pb-6">
                 <h3 className="font-headers text-black font-bold text-5xl">Quizzer</h3>
                 <sub className="font-headers font-medium text-sm text-gray-800">School Project</sub>
@@ -87,12 +88,14 @@ function Home() {
               <p className="font-headers">Quizzer is a pub-quiz app that through Websockets connects a master, player(s) and a scoreboard together. The master chooses questions and the player answers, the scoreboard keeps the result and presents the winner at the end of the game.</p>
             </div>
 
-            <div className="text-right font-headers">
-              <img className="inline-block w-full shadow-2xl mx-8 rounded-sm" src="/projects/quizzer_laptop.png" alt="hello" />
+            <div className="text-right font-headers mx-8 mt-6 md:mt-0">
+              <img className="inline-block w-full shadow-2xl rounded-sm" src="/projects/quizzer_laptop.png" alt="hello" />
             </div>
 
           </div>
         </div>
+
+        <Contact />
       </section>
 
       <Footer />
