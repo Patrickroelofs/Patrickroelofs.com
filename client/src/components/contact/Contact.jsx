@@ -2,7 +2,7 @@ import React from 'react';
 
 function Contact() {
   return (
-    <section className="w-screen m-auto py-16 relative text-center h-screen flex items-center justify-center">
+    <section className="w-full m-auto py-16 relative text-center h-screen flex items-center justify-center">
       <div>
         <p className="text-6xl font-headers font-bold">
           Now its your turn to say hello

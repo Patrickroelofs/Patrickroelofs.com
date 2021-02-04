@@ -4,7 +4,7 @@ import Skill from '../skill/Skill';
 
 function SkillsAndTools() {
   return (
-    <div className="w-screen max-w-6xl m-auto pt-36 pb-32 text-center">
+    <div className="w-full max-w-6xl m-auto pt-36 pb-32 text-center">
       <h4 className="font-headers text-black font-black text-6xl">
         Skills & Tools
         <span className="text-themeRed">.</span>
