@@ -16,11 +16,11 @@ function Home() {
 
   return (
     <>
-      <main ref={constraintsRef} className="overflow-hidden min-h-screen 100vw">
+      <main ref={constraintsRef} className="overflow-hidden min-h-screen w-screen">
         <Header constraint={constraintsRef} />
       </main>
 
-      <section className="w-screen max-w-xl m-auto pt-16 relative">
+      <section className="w-full max-w-xl m-auto pt-16 relative">
         <img
           className="mb-8 text-center m-auto md:ml-0 cursor-pointer transform hover:scale-125 ease-in-out transition-all"
           style={{ maxWidth: '200px' }}
@@ -47,14 +47,14 @@ function Home() {
 
       <SkillsAndTools />
 
-      <section className="w-screen min-h-screen m-auto pt-16 relative">
+      <section className="w-full min-h-screen m-auto pt-16 relative">
         <h1 className="relative font-headers text-black font-black text-center top-0 lg:top-20 uppercase" style={{ fontSize: '12vw' }}>
           My work
           <span className="text-themeRed font-headers font-black">.</span>
         </h1>
 
         <div
-          className="relative z-10 w-screen"
+          className="relative z-10 w-full"
           style={{ background: 'linear-gradient(90deg, #84FAB0 0%, #8FD3F4 100%)', minHeight: '12vh' }}
         >
           <div className="max-w-6xl m-auto py-16 grid grid-cols-1 md:grid-cols-2">
@@ -95,8 +95,9 @@ function Home() {
           </div>
         </div>
 
-        <Contact />
       </section>
+
+      <Contact />
 
       <Footer />
 
