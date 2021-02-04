@@ -64,7 +64,7 @@ function Home() {
                 <h3 className="font-headers text-black font-bold text-5xl">Laterlezer</h3>
                 <sub className="font-headers font-medium text-sm text-gray-800">School Project</sub>
               </div>
-              <p className="font-headers">Laterlezer is an article reader app written it allows users to parse articles and read them at a later point. The parser clean articles by removing unnecessary content like advertising and sometimes circumventing pay/cookie walls.</p>
+              <p className="font-headers">Laterlezer is an article reader app it allows users to parse articles and read them at a later point. The parser cleans articles by removing unnecessary content like advertising and sometimes circumventing pay/cookie walls.</p>
             </div>
 
             <div className="text-right font-headers mx-8 mt-6 md:mt-0">
