@@ -9,6 +9,7 @@ module.exports = {
       themeRed: '#E94840',
       white: colors.white,
       black: colors.black,
+      gray: colors.gray,
     },
     fontFamily: {
       headers: ['Work Sans', 'sans-serif'],
