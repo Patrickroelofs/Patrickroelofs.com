@@ -16,7 +16,7 @@ function Home() {
 
   return (
     <>
-      <main ref={constraintsRef} className="overflow-hidden min-h-screen w-screen">
+      <main ref={constraintsRef} className="overflow-hidden min-h-screen">
         <Header constraint={constraintsRef} />
       </main>
 
