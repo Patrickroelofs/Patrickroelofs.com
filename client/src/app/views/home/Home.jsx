@@ -5,6 +5,7 @@ import Header from '../../../components/header/Header';
 import SkillsAndTools from '../../../components/skillsAndTools/SkillsAndTools';
 import Contact from '../../../components/contact/Contact';
 import emoji from '../../../helpers/emojiHelper';
+import icons from '../../../components/icons/icons';
 
 function Home() {
   const constraintsRef = useRef(null);
@@ -61,7 +62,15 @@ function Home() {
 
             <div className="px-6">
               <div className="pb-6">
-                <h3 className="font-headers text-black font-bold text-5xl">Laterlezer</h3>
+                <div className="w-full">
+                  <h3 className="font-headers text-black font-bold text-5xl inline-block">Laterlezer</h3>
+                  <div className="pl-4 inline-block">
+                    <div className="group inline-block w-12 px-1 py-2 text-center hover:bg-white transition-all ease-in-out transform duration-200 hover:scale-125 rounded-md hover:shadow-lg cursor-default">
+                      <span className="">{icons.react()}</span>
+                      <span className="text-xs text-center opacity-0 group-hover:opacity-100">React</span>
+                    </div>
+                  </div>
+                </div>
                 <sub className="font-headers font-medium text-sm text-gray-800">School Project</sub>
               </div>
               <p className="font-headers">Laterlezer is an article reader app it allows users to parse articles and read them at a later point. The parser cleans articles by removing unnecessary content like advertising and sometimes circumventing pay/cookie walls.</p>
@@ -82,7 +91,15 @@ function Home() {
 
             <div className="px-6">
               <div className="pb-6">
-                <h3 className="font-headers text-black font-bold text-5xl">Quizzer</h3>
+                <div className="w-full">
+                  <h3 className="font-headers text-black font-bold text-5xl inline-block">Quizzer</h3>
+                  <div className="pl-4 inline-block">
+                    <div className="group inline-block w-12 px-1 py-2 text-center hover:bg-white transition-all ease-in-out transform duration-200 hover:scale-125 rounded-md hover:shadow-lg cursor-default">
+                      <span className="">{icons.react()}</span>
+                      <span className="text-xs text-center opacity-0 group-hover:opacity-100">React</span>
+                    </div>
+                  </div>
+                </div>
                 <sub className="font-headers font-medium text-sm text-gray-800">School Project</sub>
               </div>
               <p className="font-headers">Quizzer is a pub-quiz app that through Websockets connects a master, player(s) and a scoreboard together. The master chooses questions and the player answers, the scoreboard keeps the result and presents the winner at the end of the game.</p>
