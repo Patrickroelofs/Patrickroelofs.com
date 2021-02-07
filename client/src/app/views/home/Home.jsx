@@ -6,6 +6,7 @@ import SkillsAndTools from '../../../components/skillsAndTools/SkillsAndTools';
 import Contact from '../../../components/contact/Contact';
 import emoji from '../../../helpers/emojiHelper';
 import icons from '../../../components/icons/icons';
+import Button from '../../../components/button/Button';
 
 function Home() {
   const constraintsRef = useRef(null);
@@ -74,6 +75,7 @@ function Home() {
                 <sub className="font-headers font-medium text-sm text-gray-800">School Project</sub>
               </div>
               <p className="font-headers">Laterlezer is an article reader app it allows users to parse articles and read them at a later point. The parser cleans articles by removing unnecessary content like advertising and sometimes circumventing pay/cookie walls.</p>
+              <Button className="mt-6" text="View Project" goto="/projects/laterlezer/" />
             </div>
 
             <div className="text-right font-headers mx-8 mt-6 md:mt-0">
