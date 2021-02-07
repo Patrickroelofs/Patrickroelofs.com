@@ -10,7 +10,7 @@ function Contact() {
         </p>
         <a
           style={{ fontSize: '4vw' }}
-          className="font-headers py-6 inline-block"
+          className="font-headers py-6 inline-block ease-in-out duration-200 transition-colors hover:text-themeRed"
           href="mailto:contact@patrickroelofs.com"
         >
           contact@patrickroelofs.com
