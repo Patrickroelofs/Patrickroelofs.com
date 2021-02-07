@@ -21,7 +21,7 @@ ReactDOM.render(
         <meta name="og:title" content="Patrick Roelofs" />
         <meta name="og:type" content="portfolio" />
         <meta name="og:url" content="https://patrickroelofs.com" />
-        <meta name="og:image" content="%PUBLIC_URL%/metadata/metaimage.png" />
+        <meta name="og:image" content="https://patrickroelofs.com/metadata/metaimage.png" />
       </Helmet>
       <div className="100vw min-h-screen">
         <Router />
