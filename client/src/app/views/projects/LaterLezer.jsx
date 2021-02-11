@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useHistory } from 'react-router-dom';
 import Button from '../../../components/button/Button';
 
@@ -7,13 +8,13 @@ function LaterLezer() {
 
   return (
     <>
-      <main className="max-w-4xl grid md:grid-cols-2 py-8 mx-4 md:m-auto">
+      <main className="grid max-w-4xl py-8 mx-4 md:grid-cols-2 md:m-auto">
 
         <div className="self-center">
           <button
             type="button"
             onClick={() => history.push('/')}
-            className="font-headers text-black text-2xl md:text-4xl font-black"
+            className="text-2xl font-black text-black font-headers md:text-4xl"
           >
             Patrick Roelofs
             <span className="text-themeRed">.</span>
@@ -25,9 +26,14 @@ function LaterLezer() {
         </div>
       </main>
 
-      <header className="max-w-4xl m-auto mt-16 font-headers font-bold">
-        <img className="shadow-2xl" alt="projectgif" src="/projects/laterlezer/laterlezervideo.gif" />
-        <h1 className="text-6xl py-12 font-black">Laterlezer</h1>
+      <header className="max-w-4xl m-auto mt-16 font-bold font-headers">
+        <LazyLoadImage
+          effect="blur"
+          className="shadow-2xl"
+          alt="projectgif"
+          src="/projects/laterlezer/laterlezervideo.gif"
+        />
+        <h1 className="py-12 text-6xl font-black">Laterlezer</h1>
       </header>
     </>
   );
