@@ -24,8 +24,7 @@ function Home() {
       </main>
 
       <section className="relative w-full max-w-xl pt-16 m-auto">
-        <LazyLoadImage
-          effect="blur"
+        <img
           className="m-auto mb-8 text-center transition-all ease-in-out transform cursor-pointer md:ml-0 hover:scale-125"
           style={{ maxWidth: '200px' }}
           src={wearMask()}
