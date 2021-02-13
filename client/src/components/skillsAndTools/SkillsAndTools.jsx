@@ -4,12 +4,12 @@ import Skill from '../skill/Skill';
 
 function SkillsAndTools() {
   return (
-    <div className="w-full max-w-6xl m-auto pt-36 pb-32 text-center">
-      <h4 className="font-headers text-black font-black text-6xl">
+    <div className="w-full max-w-6xl pb-32 m-auto text-center pt-36">
+      <h4 className="text-6xl font-black text-black font-headers">
         Skills & Tools
         <span className="text-themeRed">.</span>
       </h4>
-      <p className="font-headers text-black font-medium text-2xl my-6">Things i&apos;ve used over the years.</p>
+      <p className="my-6 text-2xl font-medium text-black font-headers">Things i&apos;ve used over the years.</p>
       <div className="flex flex-wrap items-center justify-center">
         { Skill({ text: 'React', icon: icons.react() }) }
         { Skill({ text: 'NodeJS', icon: icons.nodejs() }) }
