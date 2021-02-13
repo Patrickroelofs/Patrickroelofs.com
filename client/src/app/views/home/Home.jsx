@@ -59,7 +59,7 @@ function Home() {
                   <span className="text-themeRed">.</span>
                 </h3>
                 <p className="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium alias libero iusto quia, placeat minus distinctio obcaecati, repellat quidem ad quod dolores suscipit porro!</p>
-                {/* <Button text="View Project" className="mt-6" /> */}
+                <Button text="View Project" className="mt-6" />
               </div>
             </div>
             <div
@@ -84,7 +84,7 @@ function Home() {
                   <span className="text-themeRed">.</span>
                 </h3>
                 <p className="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium alias libero iusto quia, placeat minus distinctio obcaecati, repellat quidem ad quod dolores suscipit porro!</p>
-                {/* <Button text="View Project" className="mt-6" /> */}
+                <Button text="View Project" className="mt-6" />
               </div>
             </div>
           </div>
