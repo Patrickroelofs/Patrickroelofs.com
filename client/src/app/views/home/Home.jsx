@@ -1,3 +1,5 @@
+/* eslint-disable react/button-has-type */
+/* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable max-len */
 import React, { useRef, useState } from 'react';
 import Footer from '../../../components/footer/Footer';
@@ -9,9 +11,16 @@ import Button from '../../../components/button/Button';
 function Home() {
   const constraintsRef = useRef(null);
   const [mask, setMask] = useState(false);
+  const [laterLezerImage, setLaterLezerImage] = useState(false);
+
   const wearMask = () => {
     if (mask) { return '/profile_tempMaskOn.png'; }
     return '/profile_temp.png';
+  };
+
+  const laterLezerImageReplacer = () => {
+    if (laterLezerImage) { return '/projects/laterlezer/laterlezervideo.gif'; }
+    return '/projects/laterlezer_laptop.png';
   };
 
   return (
@@ -62,9 +71,10 @@ function Home() {
                 <Button text="View Project" className="mt-6" />
               </div>
             </div>
-            <div
+            <button
+              onClick={() => { setLaterLezerImage(!laterLezerImage); }}
               className="col-span-4 bg-center bg-cover shadow-xl rounded-2xl"
-              style={{ backgroundImage: 'url(\'/projects/laterlezer_laptop.png\'' }}
+              style={{ backgroundImage: `url('${laterLezerImageReplacer()}')` }}
             />
           </div>
         </div>
