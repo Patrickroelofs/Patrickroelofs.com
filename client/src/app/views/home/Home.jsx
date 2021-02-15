@@ -96,6 +96,8 @@ function Home() {
 
       </section>
 
+      <Contact />
+
       <Footer />
 
     </>
