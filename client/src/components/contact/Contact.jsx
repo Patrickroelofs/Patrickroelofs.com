@@ -12,7 +12,7 @@ function Contact() {
         </p>
         <a
           href="mailto:contact@patrickroelofs.com"
-          className="text-3xl font-black duration-200 ease-in-out md:text-5xl font-headers hover:text-themeRed"
+          className="text-2xl font-black duration-200 ease-in-out md:text-5xl font-headers hover:text-themeRed"
         >
           contact@patrickroelofs.com
         </a>
