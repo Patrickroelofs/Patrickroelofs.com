@@ -77,7 +77,7 @@ function Home() {
         <div className="h-auto md:min-h-screen">
           <div className="flex flex-col m-auto md:flex-row max-w-7xl">
 
-            <div className="order-first md:order-last">
+            <div className="order-last md:order-last">
               <div className="px-6 py-12">
                 <h3 className="pb-6 text-5xl font-black text-black font-headers">
                   Quizzer
@@ -88,7 +88,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="order-last mx-4 md:order-first">
+            <div className="order-first mx-4 md:order-first">
               <img className="shadow-lg" src="/projects/quizzer_laptop.png" alt="quizzer" />
             </div>
 
