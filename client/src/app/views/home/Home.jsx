@@ -1,10 +1,10 @@
 /* eslint-disable max-len */
 import React, { useRef, useState } from 'react';
+import Contact from '../../../components/contact/Contact';
 import Footer from '../../../components/footer/Footer';
 import Header from '../../../components/header/Header';
 import SkillsAndTools from '../../../components/skillsAndTools/SkillsAndTools';
 import emoji from '../../../helpers/emojiHelper';
-import Button from '../../../components/button/Button';
 
 function Home() {
   const constraintsRef = useRef(null);
@@ -51,22 +51,21 @@ function Home() {
         </h1>
 
         {/* Start project */}
-        <div className="h-auto md:min-h-screen">
-          <div className="flex flex-col m-auto md:flex-row max-w-7xl">
+        <div className="h-auto my-16">
+          <div className="flex flex-col m-auto cursor-pointer md:flex-row max-w-7xl group">
 
             <div className="order-last md:order-first">
               <div className="px-6 py-12">
-                <h3 className="pb-6 text-5xl font-black text-black font-headers">
+                <h3 className="inline-block mb-6 text-5xl font-black text-black font-headers">
                   Laterlezer
                   <span className="text-themeRed">.</span>
                 </h3>
                 <p className="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium alias libero iusto quia, placeat minus distinctio obcaecati, repellat quidem ad quod dolores suscipit porro!</p>
-                <Button text="View Project" className="mt-6" />
               </div>
             </div>
 
             <div className="mx-4">
-              <img className="shadow-lg" src="/projects/laterlezer_laptop.png" alt="laterlezer" />
+              <img className="duration-200 ease-in-out transform shadow-lg group-hover:scale-90" src="/projects/laterlezer_laptop.png" alt="laterlezer" />
             </div>
 
           </div>
@@ -74,8 +73,8 @@ function Home() {
         {/* end project */}
 
         {/* Start project */}
-        <div className="h-auto md:min-h-screen">
-          <div className="flex flex-col m-auto md:flex-row max-w-7xl">
+        <div className="h-auto my-16">
+          <div className="flex flex-col m-auto cursor-pointer md:flex-row max-w-7xl group">
 
             <div className="order-last md:order-last">
               <div className="px-6 py-12">
@@ -84,12 +83,11 @@ function Home() {
                   <span className="text-themeRed">.</span>
                 </h3>
                 <p className="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium alias libero iusto quia, placeat minus distinctio obcaecati, repellat quidem ad quod dolores suscipit porro!</p>
-                <Button text="View Project" className="mt-6" />
               </div>
             </div>
 
             <div className="order-first mx-4 md:order-first">
-              <img className="shadow-lg" src="/projects/quizzer_laptop.png" alt="quizzer" />
+              <img className="duration-200 ease-in-out transform shadow-lg group-hover:scale-90" src="/projects/quizzer_laptop.png" alt="quizzer" />
             </div>
 
           </div>
