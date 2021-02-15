@@ -73,7 +73,7 @@ function Home() {
             </div>
             <button
               onClick={() => { setLaterLezerImage(!laterLezerImage); }}
-              className="col-span-4 bg-center bg-cover shadow-xl rounded-2xl"
+              className="col-span-4 mx-4 bg-center bg-cover shadow-xl rounded-2xl"
               style={{ backgroundImage: `url('${laterLezerImageReplacer()}')` }}
             />
           </div>
@@ -84,7 +84,7 @@ function Home() {
         <div className="min-h-screen">
           <div className="grid grid-cols-6 m-auto max-w-7xl" style={{ height: '66vh' }}>
             <div
-              className="col-span-4 bg-center bg-cover shadow-xl rounded-2xl"
+              className="col-span-4 mx-4 bg-center bg-cover shadow-xl rounded-2xl"
               style={{ backgroundImage: 'url(\'projects/quizzer_laptop.png\'' }}
             />
             <div className="col-span-2">
