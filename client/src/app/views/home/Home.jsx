@@ -68,7 +68,7 @@ function Home() {
                   Laterlezer
                   <span className="text-themeRed">.</span>
                 </h3>
-                <p className="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium alias libero iusto quia, placeat minus distinctio obcaecati, repellat quidem ad quod dolores suscipit porro!</p>
+                <p className="leading-relaxed">Laterlezer is an article reader app written it allows users to parse articles and read them at a later point. The parser clean articles by removing unnecessary content like advertising and sometimes circumventing pay/cookie walls.</p>
               </div>
             </div>
 
@@ -90,7 +90,7 @@ function Home() {
                   Quizzer
                   <span className="text-themeRed">.</span>
                 </h3>
-                <p className="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium alias libero iusto quia, placeat minus distinctio obcaecati, repellat quidem ad quod dolores suscipit porro!</p>
+                <p className="leading-relaxed">Quizzer is a pub-quiz app that through Websockets connects a master, player(s) and a scoreboard together. The master chooses questions and the player answers, the scoreboard keeps the result and presents the winner at the end of the game.</p>
               </div>
             </div>
 
