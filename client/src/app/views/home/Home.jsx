@@ -1,5 +1,7 @@
 /* eslint-disable max-len */
+import { motion } from 'framer-motion';
 import React, { useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Contact from '../../../components/contact/Contact';
 import Footer from '../../../components/footer/Footer';
 import Header from '../../../components/header/Header';
@@ -16,7 +18,7 @@ function Home() {
   };
 
   return (
-    <>
+    <motion.div exit={{ opacity: 0 }}>
       <main ref={constraintsRef} className="min-h-screen overflow-hidden">
         <Header constraint={constraintsRef} />
       </main>
@@ -52,11 +54,11 @@ function Home() {
 
         {/* Start project */}
         <div className="h-auto my-16">
-          <div className="flex flex-col m-auto cursor-pointer md:flex-row max-w-7xl group">
+          <Link to="/projects/laterlezer" className="flex flex-col m-auto cursor-pointer md:flex-row max-w-7xl group">
 
             <div className="order-last md:order-first">
               <div className="px-6 py-12">
-                <h3 className="inline-block mb-6 text-5xl font-black text-black font-headers">
+                <h3 className="pb-6 text-5xl font-black text-black transition-all duration-200 ease-in-out group-hover:text-themeRed font-headers">
                   Laterlezer
                   <span className="text-themeRed">.</span>
                 </h3>
@@ -68,7 +70,7 @@ function Home() {
               <img className="duration-200 ease-in-out transform shadow-lg group-hover:scale-90" src="/projects/laterlezer_laptop.png" alt="laterlezer" />
             </div>
 
-          </div>
+          </Link>
         </div>
         {/* end project */}
 
@@ -78,7 +80,7 @@ function Home() {
 
             <div className="order-last md:order-last">
               <div className="px-6 py-12">
-                <h3 className="pb-6 text-5xl font-black text-black font-headers">
+                <h3 className="pb-6 text-5xl font-black text-black transition-all duration-200 ease-in-out group-hover:text-themeRed font-headers">
                   Quizzer
                   <span className="text-themeRed">.</span>
                 </h3>
@@ -100,7 +102,7 @@ function Home() {
 
       <Footer />
 
-    </>
+    </motion.div>
   );
 }
 
