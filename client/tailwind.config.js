@@ -19,6 +19,7 @@ module.exports = {
     extend: {
       zIndex: ['hover'],
       scale: ['group-hover'],
+      animation: ['hover'],
     },
   },
   plugins: [

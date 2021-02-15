@@ -29,7 +29,7 @@ function PostIt() {
           <button
             onClick={() => { setRandom(Math.floor(Math.random() * randomizedSentences.length)); }}
             type="button"
-            className="absolute block w-4 h-4 left-8 bottom-5"
+            className="absolute block w-4 h-4 transition-all duration-200 ease-in-out left-8 bottom-5 hover:animate-spin"
           >
             {icons.refresh()}
           </button>
