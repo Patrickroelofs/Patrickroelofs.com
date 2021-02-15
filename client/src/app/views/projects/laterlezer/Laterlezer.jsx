@@ -11,7 +11,7 @@ function Laterlezer() {
 
   return (
     <motion.div exit={{ opacity: 0 }}>
-      <header className="w-screen py-8">
+      <header className="py-8">
         <div className="flex max-w-5xl m-auto mt-16 text-center">
           <div className="relative w-full top-6">
             <Link
