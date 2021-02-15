@@ -1,5 +1,3 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable max-len */
 import React, { useRef, useState } from 'react';
 import Footer from '../../../components/footer/Footer';
@@ -11,16 +9,10 @@ import Button from '../../../components/button/Button';
 function Home() {
   const constraintsRef = useRef(null);
   const [mask, setMask] = useState(false);
-  const [laterLezerImage, setLaterLezerImage] = useState(false);
 
   const wearMask = () => {
     if (mask) { return '/profile_tempMaskOn.png'; }
     return '/profile_temp.png';
-  };
-
-  const laterLezerImageReplacer = () => {
-    if (laterLezerImage) { return '/projects/laterlezer/laterlezervideo.gif'; }
-    return '/projects/laterlezer_laptop.png';
   };
 
   return (
@@ -59,9 +51,10 @@ function Home() {
         </h1>
 
         {/* Start project */}
-        <div className="min-h-screen">
-          <div className="grid grid-cols-6 m-auto max-w-7xl" style={{ height: '66vh' }}>
-            <div className="col-span-2">
+        <div className="h-auto md:min-h-screen">
+          <div className="flex flex-col m-auto md:flex-row max-w-7xl">
+
+            <div className="order-last md:order-first">
               <div className="px-6 py-12">
                 <h3 className="pb-6 text-5xl font-black text-black font-headers">
                   Laterlezer
@@ -71,23 +64,20 @@ function Home() {
                 <Button text="View Project" className="mt-6" />
               </div>
             </div>
-            <button
-              onClick={() => { setLaterLezerImage(!laterLezerImage); }}
-              className="col-span-4 mx-4 bg-center bg-cover shadow-xl rounded-2xl"
-              style={{ backgroundImage: `url('${laterLezerImageReplacer()}')` }}
-            />
+
+            <div className="mx-4">
+              <img className="shadow-lg" src="/projects/laterlezer_laptop.png" alt="laterlezer" />
+            </div>
+
           </div>
         </div>
         {/* end project */}
 
         {/* Start project */}
-        <div className="min-h-screen">
-          <div className="grid grid-cols-6 m-auto max-w-7xl" style={{ height: '66vh' }}>
-            <div
-              className="col-span-4 mx-4 bg-center bg-cover shadow-xl rounded-2xl"
-              style={{ backgroundImage: 'url(\'projects/quizzer_laptop.png\'' }}
-            />
-            <div className="col-span-2">
+        <div className="h-auto md:min-h-screen">
+          <div className="flex flex-col m-auto md:flex-row max-w-7xl">
+
+            <div className="order-first md:order-last">
               <div className="px-6 py-12">
                 <h3 className="pb-6 text-5xl font-black text-black font-headers">
                   Quizzer
@@ -97,6 +87,11 @@ function Home() {
                 <Button text="View Project" className="mt-6" />
               </div>
             </div>
+
+            <div className="order-last mx-4 md:order-first">
+              <img className="shadow-lg" src="/projects/quizzer_laptop.png" alt="quizzer" />
+            </div>
+
           </div>
         </div>
         {/* end project */}
