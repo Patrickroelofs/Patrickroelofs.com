@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import { motion } from 'framer-motion';
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Contact from '../../../components/contact/Contact';
 import Footer from '../../../components/footer/Footer';
@@ -12,6 +12,10 @@ import emoji from '../../../helpers/emojiHelper';
 function Home() {
   const constraintsRef = useRef(null);
   const [mask, setMask] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const wearMask = () => {
     if (mask) { return '/profile_tempMaskOn.png'; }

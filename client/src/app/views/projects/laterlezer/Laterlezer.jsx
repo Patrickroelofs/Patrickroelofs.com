@@ -1,10 +1,14 @@
 import { motion } from 'framer-motion';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom';
 import Footer from '../../../../components/footer/Footer';
 
 function Laterlezer() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <motion.div exit={{ opacity: 0 }}>
       <header className="w-screen py-8">
