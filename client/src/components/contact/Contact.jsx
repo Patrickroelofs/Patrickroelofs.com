@@ -5,7 +5,7 @@ function Contact() {
     <section className="h-screen min-w-full">
       <div className="flex flex-col items-center justify-center h-screen max-w-6xl m-auto text-center align-middle">
         <p
-          className="pb-4 text-3xl font-black md:text-6xl"
+          className="mb-8 text-3xl font-black md:text-6xl"
         >
           Send me a message
           <span className="text-themeRed">.</span>
