@@ -20,6 +20,7 @@ module.exports = {
       zIndex: ['hover'],
       scale: ['group-hover'],
       animation: ['hover'],
+      margin: ['group-hover'],
     },
   },
   plugins: [

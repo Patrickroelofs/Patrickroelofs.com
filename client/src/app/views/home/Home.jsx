@@ -8,6 +8,7 @@ import Header from '../../../components/header/Header';
 import PostIt from '../../../components/postit/PostIt';
 import SkillsAndTools from '../../../components/skillsAndTools/SkillsAndTools';
 import emoji from '../../../helpers/emojiHelper';
+import Button from '../../../components/button/Button';
 
 function Home() {
   const constraintsRef = useRef(null);
@@ -69,6 +70,7 @@ function Home() {
                   <span className="text-themeRed">.</span>
                 </h3>
                 <p className="leading-relaxed">Laterlezer is an article reader app written it allows users to parse articles and read them at a later point. The parser clean articles by removing unnecessary content like advertising and sometimes circumventing pay/cookie walls.</p>
+                <Button goto="/projects/laterlezer" text="View Project" className="relative mt-8 group-hover:scale-125 group-hover:ml-4" />
               </div>
             </div>
 
@@ -91,6 +93,7 @@ function Home() {
                   <span className="text-themeRed">.</span>
                 </h3>
                 <p className="leading-relaxed">Quizzer is a pub-quiz app that through Websockets connects a master, player(s) and a scoreboard together. The master chooses questions and the player answers, the scoreboard keeps the result and presents the winner at the end of the game.</p>
+                <Button goto="/projects/quizzer" text="View Project" className="relative mt-8 group-hover:scale-125 group-hover:ml-4" />
               </div>
             </div>
 
