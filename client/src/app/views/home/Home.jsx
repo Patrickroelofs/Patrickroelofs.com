@@ -84,7 +84,7 @@ function Home() {
 
         {/* Start project */}
         <div className="h-auto my-16">
-          <div className="flex flex-col m-auto cursor-pointer md:flex-row max-w-7xl group">
+          <Link to="/projects/quizzer" className="flex flex-col m-auto cursor-pointer md:flex-row max-w-7xl group">
 
             <div className="order-last md:order-last">
               <div className="px-6 py-12">
@@ -101,7 +101,7 @@ function Home() {
               <img className="duration-200 ease-in-out transform shadow-lg group-hover:scale-90" src="/projects/quizzer_laptop.png" alt="quizzer" />
             </div>
 
-          </div>
+          </Link>
         </div>
         {/* end project */}
 

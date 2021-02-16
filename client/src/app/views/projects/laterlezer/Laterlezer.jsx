@@ -13,10 +13,10 @@ function Laterlezer() {
     <motion.div exit={{ opacity: 0 }}>
       <header className="py-8">
         <div className="flex max-w-5xl m-auto mt-16 text-center">
-          <div className="relative w-full top-6">
+          <div className="relative top-0 w-full md:top-6">
             <Link
               to="/"
-              className="font-black text-center text-black uppercase text-8xl font-headers"
+              className="text-5xl font-black text-center text-black uppercase md:text-8xl font-headers"
             >
               Patrick Roelofs
               <span className="text-themeRed">.</span>
@@ -24,12 +24,14 @@ function Laterlezer() {
           </div>
         </div>
         <div className="relative z-10 max-w-5xl m-auto">
-          <LazyLoadImage effect="blur" className="shadow-xl" src="/projects/laterlezer/laterlezervideo.gif" alt="video" />
+          <div className="mx-4">
+            <LazyLoadImage effect="blur" className="shadow-xl" src="/projects/laterlezer/laterlezervideo.gif" alt="video" />
+          </div>
         </div>
       </header>
 
       <article className="max-w-3xl m-auto mb-48">
-        <h2 className="text-6xl font-black text-black font-headers">
+        <h2 className="text-5xl font-black text-center text-black md:text-left md:text-6xl font-headers">
           Laterlezer
           <span className="text-themeRed">.</span>
         </h2>
