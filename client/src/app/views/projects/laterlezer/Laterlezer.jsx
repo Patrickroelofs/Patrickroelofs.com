@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom';
 import Footer from '../../../../components/footer/Footer';
+import OnGithub from '../../../../components/onGithub/OnGithub';
 
 function Laterlezer() {
   useEffect(() => {
@@ -36,6 +37,8 @@ function Laterlezer() {
           <span className="text-themeRed">.</span>
         </h2>
       </article>
+
+      <OnGithub link="https://github.com/Patrickroelofs/HANICA-DWA-Laterlezer" />
 
       <Footer />
     </motion.div>
