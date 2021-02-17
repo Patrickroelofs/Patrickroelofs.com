@@ -31,11 +31,17 @@ function Laterlezer() {
         </div>
       </header>
 
-      <article className="max-w-3xl m-auto mb-48">
-        <h2 className="text-5xl font-black text-center text-black md:text-left md:text-6xl font-headers">
-          Laterlezer
-          <span className="text-themeRed">.</span>
-        </h2>
+      <article className="mb-48">
+        <div className="max-w-xl m-auto">
+          <h2 className="mb-12 text-5xl font-black text-center text-black md:text-left md:text-6xl font-headers">
+            Laterlezer
+            <span className="text-themeRed">.</span>
+          </h2>
+
+          <div className="leading-normal font-headers">
+            <p className="text-lg font-bold">Laterlezer is an article reader app written it allows users to parse articles and read them at a later point. The parser clean articles by removing unnecessary content like advertising and sometimes circumventing pay/cookie walls.</p>
+          </div>
+        </div>
       </article>
 
       <OnGithub link="https://github.com/Patrickroelofs/HANICA-DWA-Laterlezer" />
