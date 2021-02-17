@@ -31,7 +31,7 @@ function Laterlezer() {
         </div>
       </header>
 
-      <article className="mb-48">
+      <article className="px-4 mb-48">
         <div className="max-w-xl m-auto">
           <h2 className="mb-12 text-5xl font-black text-center text-black md:text-left md:text-6xl font-headers">
             Laterlezer
