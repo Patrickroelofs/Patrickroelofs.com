@@ -5,6 +5,7 @@ function OnGithub({ link }) {
   return (
     <div className="max-w-5xl m-auto mb-48">
       <a
+        rel="noreferrer"
         target="_blank"
         href={link}
         className="block text-xl text-center transition-all duration-200 ease-in-out transform md:text-4xl hover:scale-125 font-headers"
