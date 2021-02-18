@@ -7,7 +7,7 @@ function PostIt() {
   const randomizedSentences = [
     'My terrible code was included in Githubs Arctic Code Vault...<br> The future of humanity is in my hands.',
     'Pizza, thats my favorite food.',
-    "My <a target='_blank' class='underline' href='https://github.com/Patrickroelofs'>Github</a> has a bunch of cool (mostly school) projects.",
+    "My <a target='_blank' rel='noreferrer' class='underline' href='https://github.com/Patrickroelofs'>Github</a> has a bunch of cool (mostly school) projects.",
     'This website has seen about 40 iterations... (thats not a joke, i really like to remake this)',
   ];
   const [random, setRandom] = useState(Math.floor(Math.random() * randomizedSentences.length));
