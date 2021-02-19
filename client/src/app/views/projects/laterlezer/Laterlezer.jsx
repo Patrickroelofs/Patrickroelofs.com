@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import React, { useEffect } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom';
+import ReactPlayer from 'react-player';
 import Footer from '../../../../components/footer/Footer';
 import OnGithub from '../../../../components/onGithub/OnGithub';
 
@@ -40,7 +41,28 @@ function Laterlezer() {
 
           <div className="leading-normal font-headers">
             <p className="text-lg font-bold">Laterlezer is an article reader app written it allows users to parse articles and read them at a later point. The parser clean articles by removing unnecessary content like advertising and sometimes circumventing pay/cookie walls.</p>
+            <p className="mt-6 text-lg">Laterlezer was developed as a group project of 5 students at the Hogeschool van Arnhem en Nijmegen.</p>
           </div>
+        </div>
+
+        <div className="max-w-3xl m-auto my-12">
+          <LazyLoadImage effect="blur" className="shadow-xl" src="/projects/laterlezer/siteOverview.png" />
+        </div>
+
+        <div className="max-w-xl m-auto leading-normal font-headers">
+          <p className="text-lg">Articles can simply be added by inserting them into the field, they will then be converted by the server and made readable by Tailwind CSS, all advertising and other unwanted stuff will be removed.</p>
+        </div>
+
+        <div className="max-w-3xl m-auto my-12">
+          <ReactPlayer width="100%" height="100%" controls muted url="/projects/laterlezer/addArticle.mp4" />
+        </div>
+
+        <div className="max-w-xl m-auto leading-normal font-headers">
+          <p className="text-lg">Articles can be filtered by tags, creating tags is easy, applying them to an article looks complicated but it is actually a very clear and obvious system.</p>
+        </div>
+
+        <div className="max-w-3xl m-auto my-12">
+          <ReactPlayer width="100%" height="100%" controls muted url="/projects/laterlezer/addTag.mp4" />
         </div>
       </article>
 
