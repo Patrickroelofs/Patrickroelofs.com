@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import React, { useEffect } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom';
-import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player/lazy';
 import Footer from '../../../../components/footer/Footer';
 import OnGithub from '../../../../components/onGithub/OnGithub';
 
